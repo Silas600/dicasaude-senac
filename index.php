@@ -85,6 +85,19 @@ include "includes/cabecalho.php";
                 </div>
             </div>
 
+            <div class="row">
+                <div class="=col-md-12 d-flex justify-content-center mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            class="embed-responsive-item"
+                           src="https://www.youtube.com/embed/iQPNWBwP2nQ?si=ykyZgfX5iNW5Mc6Z"
+                            title="Dicas de Emagrecimento"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
 
 
     </main>
