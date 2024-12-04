@@ -1,5 +1,5 @@
 <!-- index.php -->
-<?php 
+<?php
 $titulo = "Serviços - ";
 include "includes/cabecalho.php";
 ?>
@@ -29,7 +29,7 @@ include "includes/cabecalho.php";
     <!-- Seção Principal de Dicas de Emagrecimento -->
     <main class="conteudo container mt-5">
         <section class="dicas mb-5">
-           
+
 
             <!-- Card de Dica 1 -->
             <div class="row">
@@ -70,22 +70,22 @@ include "includes/cabecalho.php";
         <!-- Seção de Vídeos Educativos -->
         <section class="videos mb-5">
             <h2 class="text-center mb-4">
-            4 DICAS PARA MELHORAR SUA SAÚDE MENTAL SEM PRECISAR IR AO PSICÓLOGO
+                4 DICAS PARA MELHORAR SUA SAÚDE MENTAL SEM PRECISAR IR AO PSICÓLOGO
             </h2>
             <div class="row">
-    <div class="col-md-6 mb-4">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe 
-                class="embed-responsive-item" 
-                src="https://www.youtube.com/embed/CrwRwgNJIMU?si=z6O2SNINY1-s9wic" 
-                title="Dicas de Emagrecimento" 
-                allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-</div>
+                <div class="=col-md-12 d-flex justify-content-center mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/CrwRwgNJIMU?si=z6O2SNINY1-s9wic"
+                            title="Dicas de Emagrecimento"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
 
-       
+
 
     </main>
 
@@ -94,4 +94,3 @@ include "includes/cabecalho.php";
 </body>
 
 </html>
-
