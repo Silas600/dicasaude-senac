@@ -17,6 +17,7 @@ include "includes/cabecalho.php";
 
     <!-- Seu CSS personalizado -->
     <link rel="stylesheet" href="css/estilos.css">
+
 </head>
 
 <body>
@@ -37,7 +38,7 @@ include "includes/cabecalho.php";
                         <div class="card shadow-sm">
                             <img src="imagens/alimentacao.jpg" class="card-img-top" alt="Alimentação Saudável">
                             <div class="card-body">
-                                <h5 class="card-title">1. Alimentação Balanceada</h5>
+                                <h5 class="card-title">1. Alimentação Balanceada </h5>
                                 <p class="card-text">Mantenha uma dieta rica em frutas, legumes e proteínas magras. Evite alimentos processados e excesso de açúcar.</p>
                             </div>
                         </div>
@@ -58,7 +59,7 @@ include "includes/cabecalho.php";
 
 
                 <div class="col-md-4 mb-4">
-                    <a href="exercicio.php" class="text-decoration-none text-dark">
+                    <a href="suplementacao.php" class="text-decoration-none text-dark">
                         <div class="card shadow-sm">
                             <img src="imagens/suplementacao.jpg" class="card-img-top" alt="Hidratação">
                             <div class="card-body">
@@ -72,20 +73,65 @@ include "includes/cabecalho.php";
         </section>
 
         <!-- Seção de Vídeos Educativos -->
-        <section class="videos mb-5">
-            <h2 class="text-center mb-4">O que é ser uma pessoa saudável?</h2>
-            <div class="row">
-                <div class="col-md-12 d-flex justify-content-center mb-4">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9q7WaQqtWK4?si=M9V8y70Xz6fTZsKP" title="Dicas de Emagrecimento" allowfullscreen></iframe>
+        <section>
+            <h2 class="text-center">Você sabe como está o seu indice de massa corporal?</h2>
+            
+<hr>
+            <h3>Calcule seu IMC</h3>
+            <div class="calculator">
+                <form id="imcForm">
+                    <div class="form-group">
+                        <label for="weight">Peso (kg):</label>
+                        <input type="number" id="weight" class="form-control" placeholder="Digite seu peso em kg" required>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="height">Altura (m):</label>
+                        <input type="number" step="0.01" id="height" class="form-control" placeholder="Digite sua altura em metros" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="calculateIMC()">Calcular IMC</button>
+                </form>
+                <div id="imcResult" style="margin-top: 20px;"></div>
             </div>
         </section>
+    </div>
+
+    <script>
+        function calculateIMC() {
+            var weight = parseFloat(document.getElementById('weight').value);
+            var height = parseFloat(document.getElementById('height').value);
+            var result = document.getElementById('imcResult');
+
+            if (isNaN(weight) || isNaN(height) || height <= 0 || weight <= 0) {
+                result.innerHTML = "Por favor, insira valores válidos.";
+                return;
+            }
+
+            var imc = weight / (height * height);
+            var category = '';
+
+            if (imc < 18.5) {
+                category = 'Abaixo do peso';
+            } else if (imc >= 18.5 && imc < 24.9) {
+                category = 'Peso normal';
+            } else if (imc >= 25 && imc < 29.9) {
+                category = 'Sobrepeso';
+            } else {
+                category = 'Obesidade';
+            }
+
+            result.innerHTML = `Seu IMC é ${imc.toFixed(2)}. Categoria: ${category}.`;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <DIV>
 
         <!-- Seção Sobre Nós -->
-        <section class="sobre-nos bg-light py-5">
+        <section id="sobre-nos" class="sobre-nos bg-light py-5">
             <div class="container">
+            <a href=""></a>
                 <h2 class="text-center mb-4">Sobre Nós</h2>
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -102,53 +148,7 @@ include "includes/cabecalho.php";
                 </div>
             </div>
         </section>
-
-         <!-- Seção Contato -->
-         <section class="contato py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Contato</h2>
-                <div class="row">
-                    <!-- Formulário de Contato -->
-                    <div class="col-md-6">
-                        <form action="processa_contato.php" method="POST" class="shadow-sm p-4 rounded bg-light">
-                            <div class="mb-3">
-                                <label for="nome" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="mensagem" class="form-label">Mensagem</label>
-                                <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                        </form>
-                    </div>
-
-                    <!-- Informações de Contato -->
-                    <div class="col-md-6">
-                        <h5>Entre em contato conosco</h5>
-                        <p>
-                            Se você tem dúvidas, sugestões ou gostaria de colaborar, entre em contato conosco. Estamos aqui para ajudar!
-                        </p>
-                        <ul class="list-unstyled">
-                            <li><strong>E-mail:</strong> contato@dicasaude.com</li>
-                            <li><strong>Telefone:</strong> (11) 1234-5678</li>
-                            <li><strong>Endereço:</strong> Rua da Saúde, 123 - São Paulo, SP</li>
-                        </ul>
-                        <p>Siga-nos nas redes sociais:</p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#" class="text-primary">Facebook</a></li>
-                            <li class="list-inline-item"><a href="#" class="text-info">Twitter</a></li>
-                            <li class="list-inline-item"><a href="#" class="text-danger">Instagram</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        </DIV>
     </main>
 
     <?php include "includes/rodape.php"; ?>

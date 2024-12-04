@@ -13,14 +13,14 @@
  
     <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand text-white" href="#">DICA§AÚDE</a>
+        <a class="navbar-brand text-white" href="index.php">DICA§AÚDE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a class="nav-link text-white" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Sobre</a></li>
+                <li class="nav-item active"><a class="nav-link text-white" href="index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#sobre-nos">Sobre</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="#">Contato</a></li>
             </ul>
         </div>
