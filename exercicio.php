@@ -10,6 +10,107 @@ include "includes/cabecalho.php"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios Regulares: Benefícios para a Saúde e Bem-Estar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .container {
+            padding-top: 50px;
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .content-section h3 {
+            color: #007bff;
+        }
+
+        .btn-primary {
+            border-radius: 8px;
+            padding: 12px;
+            width: 100%;
+        }
+
+        .embed-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        .embed-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1, h3 {
+            font-weight: bold;
+        }
+
+        .imc-result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #e9f7ef;
+            border: 1px solid #4CAF50;
+            color: #4CAF50;
+        }
+
+        .imc-result.error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+
+        /* Estilo para lista */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 8px;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .container h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #343a40;
+        }
+
+        /* Melhorando responsividade */
+        @media (max-width: 768px) {
+            .container h1 {
+                font-size: 2rem;
+            }
+
+            .content-section h3 {
+                font-size: 1.5rem;
+            }
+
+            .btn-primary {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding-top: 30px;
+            }
+        }
+</style>
 </head>
 <body>
 

@@ -36,10 +36,44 @@ echo "<p> Cadastro feito com Sucesso </p>";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <style>
+
+    body{
+        text-align: center;
+       
+        
+    }
+
+    .pai{
+         display: flex;
+         justify-content: center;
+    }
+
+    form{
+        text-align: center;
+        background-color: lightblue;
+        width: 50vw;
+        height: 600px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        padding-top: 10px;
+        
+    }
+
+    form .cadastrar{
+
+    background-color: white;
+    border: 1px solid black;
+
+    }
+
+
+    </style>
     
 </head>
 <body>
-    <h2>Formulário de Cadastro</h2>
+    <h2>Formulário de contato</h2>
+    <div class="pai">
     <form action="" method="POST">
         <label for="nome">Nome:</label><br>
         <input type="text" id="nome" name="nome" required><br><br>
@@ -54,11 +88,12 @@ echo "<p> Cadastro feito com Sucesso </p>";
         <textarea cols="30" rows="7" name="mensagem" id="mensagem"></textarea><br><br><br><br>
 
 
-        <input type="submit" value="Cadastrar">
+        <input class="cadastrar" type="submit" value="Cadastrar">
         <br><br>
         <br><br>
         <br><br>
     </form>
+    </div>
     <?php include "includes/rodape.php"; ?>
 
 </body>

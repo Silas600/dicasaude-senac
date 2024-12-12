@@ -90,7 +90,7 @@ include "includes/cabecalho.php";
                 <!-- Sila Medeiros -->
                 <div class="col-md-4 team-member">
                     <img src="imagens/silas.jfif" alt="Sila Medeiros">
-                    <h4>Sila Medeiros</h4>
+                    <h4>Silas Medeiros</h4>
                     <p>18 anos - Desenvolvedor Web</p>
     <p>Silas é o responsável pelo desenvolvimento da interface do usuário do projeto. Com habilidades em programação front-end, ele cria páginas interativas e responsivas, garantindo que os usuários tenham uma experiência fluida e agradável ao interagir com o sistema.</p>
                 </div>

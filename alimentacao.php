@@ -1,6 +1,6 @@
 <?php 
 $titulo = "alimentacao - ";
-include "includes/cabecalho.php" 
+include "includes/cabecalho.php";
 ?>
 
 <!DOCTYPE html>
@@ -11,22 +11,49 @@ include "includes/cabecalho.php"
     <title>Alimentação Balanceada para Programadores</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        .calculator {
-            background-color: #f9f9f9;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+            color: #333;
         }
 
-        .form-control {
-            border-radius: 8px;
+        .container {
+            padding-top: 50px;
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .content-section h3 {
+            color: #007bff;
         }
 
         .btn-primary {
-            width: 100%;
             border-radius: 8px;
             padding: 12px;
+            width: 100%;
+        }
+
+        .embed-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        .embed-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1, h3 {
+            font-weight: bold;
         }
 
         .imc-result {
@@ -44,13 +71,51 @@ include "includes/cabecalho.php"
             border: 1px solid #f5c6cb;
             color: #721c24;
         }
+
+        /* Estilo para lista */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 8px;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .container h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #343a40;
+        }
+
+        /* Melhorando responsividade */
+        @media (max-width: 768px) {
+            .container h1 {
+                font-size: 2rem;
+            }
+
+            .content-section h3 {
+                font-size: 1.5rem;
+            }
+
+            .btn-primary {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding-top: 30px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1 class="text-center">Alimentação Balanceada:
-            <p> Como Melhorar a Saúde e Produtividade</p></h1>
+        <h1>Alimentação Balanceada: <small>Como Melhorar a Saúde e Produtividade</small></h1>
 
         <section class="content-section">
             <h3>Por que a Alimentação é Importante?</h3>
@@ -85,12 +150,13 @@ include "includes/cabecalho.php"
                 <li>Faça pausas regulares para descansar e manter o foco.</li>
             </ul>
         </section>
-        <h3 class="text-center mt-5">Alimentação Balanceada </h3>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/ywUuoTJJznA?si=vesNMI40JCq6B0jR" title="Suplementação Adequada" allowfullscreen></iframe>
+
+        <h3 class="text-center mt-5">Assista ao Vídeo sobre Alimentação Balanceada</h3>
+        <div class="embed-responsive">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ywUuoTJJznA?si=vesNMI40JCq6B0jR" title="Suplementação Adequada" allowfullscreen></iframe>
         </div>
 
-         
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
@@ -99,6 +165,4 @@ include "includes/cabecalho.php"
 </body>
 </html>
 
-
-
-<?php include "includes/rodape.php"?>
+<?php include "includes/rodape.php"; ?>

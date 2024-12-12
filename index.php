@@ -17,6 +17,72 @@ include "includes/cabecalho.php";
 
     <!-- Seu CSS personalizado -->
     <link rel="stylesheet" href="css/estilos.css">
+    <STYle>
+        /* CSS para a Calculadora de IMC */
+.calculator {
+    background-color: #f8f9fa; /* Cor de fundo suave */
+    border: 1px solid #dee2e6; /* Borda sutil */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 400px; /* Largura máxima */
+    margin: 20px auto; /* Centralizar no container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.calculator h3 {
+    text-align: center;
+    color: #495057; /* Cor do texto do título */
+    margin-bottom: 20px;
+}
+
+.calculator .form-group {
+    margin-bottom: 15px; /* Espaçamento entre campos */
+}
+
+.calculator label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.calculator input {
+    border: 1px solid #ced4da; /* Cor da borda */
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%; /* Campo preenchendo o container */
+    box-sizing: border-box; /* Inclui padding na largura */
+}
+
+.calculator button {
+    display: block;
+    width: 100%; /* Botão preenchendo o container */
+    background-color: #007bff; /* Azul Bootstrap */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculator button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+#imcResult {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #495057;
+    margin-top: 15px;
+}
+
+.calculadora{
+    text-align: center;
+}
+
+    </STYle>
 
 </head>
 
@@ -80,7 +146,7 @@ Neste guia, vamos explorar pequenas mudanças que transformam sua rotina e fazem
         </section>
 
         <!-- Seção de Vídeos Educativos -->
-        <section>
+        <section class=" calculadora">
             <h2 class="text-center">Você sabe como está o seu indice de massa corporal?</h2>
             
 <hr>
