@@ -20,9 +20,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a class="nav-link text-white" href="index.php">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#sobre-nos">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Contato</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="parceiros.php">Parceiros</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="formulario.php">Contato</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="sobrenos.php">Sobre</a></li>
             </ul>
         </div>
     </nav>
- 

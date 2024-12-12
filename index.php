@@ -25,6 +25,13 @@ include "includes/cabecalho.php";
     <!-- Cabeçalho -->
     <header class="bg-light py-5 text-center">
         <h1 class="display-4">Dicas de Saúde para uma Vida Melhor</h1>
+<p></p>
+   <p></p> 
+       <p>
+      
+Neste guia, vamos explorar pequenas mudanças que transformam sua rotina e fazem você se sentir mais leve, enérgico e realizado.</p>
+<p>Afinal, a saúde é o maior tesouro que podemos conquistar. Vamos juntos cuidar melhor de quem mais importa: você! </b>
+     </p>        
     </header>
 
     <!-- Seção Principal de Dicas de Emagrecimento -->
@@ -128,27 +135,7 @@ include "includes/cabecalho.php";
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <DIV>
 
-        <!-- Seção Sobre Nós -->
-        <section id="sobre-nos" class="sobre-nos bg-light py-5">
-            <div class="container">
-            <a href=""></a>
-                <h2 class="text-center mb-4">Sobre Nós</h2>
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <img src="imagens/sobre-nos.jpg" alt="Sobre Nós" class="img-fluid rounded shadow-sm">
-                    </div>
-                    <div class="col-md-6">
-                        <p>
-                           <!--  -->
-                        </p>
-                        <p>
-                            <!--  -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        </DIV>
+   
     </main>
 
     <?php include "includes/rodape.php"; ?>
